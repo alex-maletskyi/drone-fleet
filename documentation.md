@@ -9,7 +9,7 @@
 
 ## Scope and Key Points
 
-*Had an idea to develop an interface for military drones but rejected it for the reason that my domain knowledge is centered around urban logistics.
+**Had an idea to develop an interface for military drones but rejected it for the reason that my domain knowledge is centered around urban logistics.*
 
 - Three drone classes, color-coded → keep it, just make them logistics classes (light/fast small parcel, medium-range, heavy cargo) with different speed, range, and payload capacity. Same UI value, and the tradeoffs are real ones from your thesis.
 - Altitude layers → this is the genuinely good idea in there. Multi-drone airspace deconfliction is a real, current problem in drone delivery (UTM / U-space regulation). Same engineering, and it ties directly to your research. Save it for later, but keep it on the list.
@@ -26,3 +26,6 @@
 - Battery drains with distance; drone must return to depot to recharge
 
 Everything else — no-fly zones, altitude layers, multi-drone conflict, optimization heuristics — is a phase 2 addition on top of a working system, which is a much better position to build from than trying to design it all now.
+
+## ORDER FOR NOW: 
+    MVP working and deployed, then the database, then Python if one of those features is still what you want.
