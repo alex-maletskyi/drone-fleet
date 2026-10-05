@@ -23,5 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 
-# Planning
-planning/
+# Planning (REMOVE AFTER IT HAS BEEN SETUP PROPERLY)
+planning/ 
+
+#Notes
+motes.md
