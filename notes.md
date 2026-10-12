@@ -1,8 +1,18 @@
+# FUTURE CHANGES:
+- MAYBE change *object* notation to *classes* once behavior (fluing, picking up package at, etc) of drones gets to be implemented 
+
 ## 02.10
 - up to this point the proect is setup in VS Code
 - created a gitignore
 - created a planning folder
     - added a design.md with wireframe for the main dashboard
+
+## 12.10 
+- created project on GH
+- added issues on GH
+- added map from Leaflet
+- made the layout of main page for the platform
+- started working on the data for drones in drone-data.js
 
 plan for next weeks:
 - [x] Render Leaflet map (#1, already exists)
