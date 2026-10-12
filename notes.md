@@ -5,8 +5,8 @@
     - added a design.md with wireframe for the main dashboard
 
 plan for next weeks:
-- [ ] Render Leaflet map (#1, already exists)
-- [ ] Page layout shell: top bar, map area, sidebar, with placeholder text in each region
+- [x] Render Leaflet map (#1, already exists)
+- [x] Page layout shell: top bar, map area, sidebar, with placeholder text in each region
 - [ ] Drone data model: the "brain" side: what a drone is (class, battery, status, position), plus some sample drones and depots. No visuals.
 - [ ] Show depots and drones on the map, color-coded by class
 - [ ] Fleet roster in the sidebar
