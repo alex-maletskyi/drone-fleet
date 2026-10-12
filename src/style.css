@@ -1,1 +1,34 @@
-#map { height: 180px; }
+/*stops the layout from overflowing the window*/
+#body {
+    margin: 0;
+}
+
+/*page layout: a top bar across the full width, 
+then the map and the sidebar side by side 
+underneath*/
+#app {
+    display: grid;
+    /*2 columns: the map takes all remaining width 
+    (1fr), the sidebar is a fixed 320px*/
+    grid-template-columns: 1fr 320px;
+    /*2 rows: the top bar is only as tall as its 
+    content (auto), the map and sidebar row fills 
+    the rest of the height (1fr)*/
+    grid-template-rows: auto 1fr;
+    /*fills the full browser window height, so the 
+    1fr row has space to give to the map*/
+    height: 100vh;
+}
+
+#top-bar {
+    /*span from the first column line to the last 
+    (-1), so the bar stretches across both columns*/
+    grid-column: 1 / -1;
+    padding: 12px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+#side-bar {
+    padding: 16px;
+    border-left: 1px solid #ddd;
+}
