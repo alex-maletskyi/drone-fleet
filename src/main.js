@@ -1,6 +1,7 @@
 import './style.css'
 import 'leaflet/dist/leaflet.css'
 import L from 'leaflet'
+import { classes, depots, drones } from './drone-data.js'
 
 /*initialize the map and set its view to our chosen 
 geographical coordinates and a zoom level*/
