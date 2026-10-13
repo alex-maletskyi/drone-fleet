@@ -1,5 +1,5 @@
 /*stops the layout from overflowing the window*/
-#body {
+body {
     margin: 0;
 }
 
@@ -31,4 +31,10 @@ underneath*/
 #side-bar {
     padding: 16px;
     border-left: 1px solid #ddd;
+}
+
+.my-square-marker {
+    background-color: #4a525a;      /* Fill color */
+    border: 2px solid #fff;   /* Stroke weight and color */
+    opacity: 1;                  /* Fill opacity */
 }

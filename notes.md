@@ -14,6 +14,9 @@
 - made the layout of main page for the platform
 - started working on the data for drones in drone-data.js
 
+## 13.10 
+- displaying drones and depots on the map
+
 plan for next weeks:
 - [x] Render Leaflet map (#1, already exists)
 - [x] Page layout shell: top bar, map area, sidebar, with placeholder text in each region
