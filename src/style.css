@@ -38,3 +38,15 @@ underneath*/
     border: 2px solid #fff;   /* Stroke weight and color */
     opacity: 1;                  /* Fill opacity */
 }
+/*dots/markers on the sidebar for every drone*/
+.drone-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}

@@ -1,6 +1,7 @@
 # FUTURE CHANGES:
 - MAYBE change *object* notation to *classes* once behavior (fluing, picking up package at, etc) of drones gets to be implemented 
-
+- *DEPOT* markers cover the *drones*; Leaflet draws L.marker (your depots) on a layer above circle markers (your drones), so depots always end up on top. It’s not urgent; just keep it on the list for when you polish the map.
+  
 ## 02.10
 - up to this point the proect is setup in VS Code
 - created a gitignore
@@ -16,6 +17,9 @@
 
 ## 13.10 
 - displaying drones and depots on the map
+
+## 15.10 
+- added the sidebar and displaying data on it
 
 plan for next weeks:
 - [x] Render Leaflet map (#1, already exists)
