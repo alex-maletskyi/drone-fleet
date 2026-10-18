@@ -58,3 +58,50 @@ depots.forEach(depot => {
         className: 'marker-label'
     })
 });
+
+const fleetList = document.getElementById('fleet-list');
+
+/*Extending status of drones so it would be more detailed:
+"Idle at Depot North*/
+
+const statusText = {
+    idle: 'Idle',
+    flying: 'In flight',
+    charging: 'Charging'
+}
+const getStatusText = (drone) => {
+    let text = '';
+    
+    if(drone.depotId == null) {
+        text = statusText[drone.status];
+    } else {
+        const depotName = depots.find(depot => depot.id === drone.depotId).name;
+        text = statusText[drone.status] + " at " + depotName;
+    }
+    return text;
+}
+
+
+/*Adding list of drone names to the sidebar */
+const renderFleetList = (droneList) => {
+    fleetList.innerHTML = droneList.map(drone =>
+        `<li>
+            <span class="drone-dot" style="background-color: ${classColors[drone.droneClass]}"></span>
+            <span>${drone.name}</span>
+            <span>${getStatusText(drone)}</span>
+            <span>${drone.battery}%</span>
+        </li>`).join('');
+}
+
+const getDronesByClass = (selectedClass) => {
+    if(selectedClass === 'all') return drones;
+    return drones.filter(drone => drone.droneClass === selectedClass);
+}
+
+renderFleetList(drones);
+
+document.getElementById('filter-group').addEventListener('click', function(event) {
+    let value = event.target.dataset.class;
+    if(!value) return;
+    renderFleetList(getDronesByClass(value));
+});

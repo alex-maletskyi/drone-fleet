@@ -10,7 +10,16 @@
     <div id="app">
       <div id="top-bar">Drone Fleet</div>
       <div id="map"></div>
-      <div id="side-bar">Fleet</div>
+      <div id="side-bar">
+        <h1>Fleet</h1>
+        <div id="filter-group">
+          <button type="button" class="filter-btn-active" data-class="all">All</button>
+          <button type="button" class="filter-btn" data-class="light">Light</button>
+          <button type="button" class="filter-btn" data-class="medium">Medium</button>
+          <button type="button" class="filter-btn" data-class="heavy">Heavy</button>
+        </div>
+        <ul id="fleet-list"></ul>
+      </div>
     </div>
     <script type="module" src="/src/main.js"></script>
   </body>
