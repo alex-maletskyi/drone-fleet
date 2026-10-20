@@ -105,3 +105,22 @@ document.getElementById('filter-group').addEventListener('click', function(event
     if(!value) return;
     renderFleetList(getDronesByClass(value));
 });
+
+/*Adding top-bar summary of drones */
+const countByStatus = (status) => {
+    return drones.filter(drone => drone.status === status).length;
+}
+
+const topBarSummary = document.getElementById('top-bar-summary');
+
+const renderSummary = () => {
+    topBarSummary.innerHTML = 
+    `
+    <span>${drones.length} drones</span>
+    <span>${countByStatus('idle')} idle</span>
+    <span>${countByStatus('flying')} in flight</span>
+    <span>${countByStatus('charging')} charging</span>
+    `;
+}
+
+renderSummary();

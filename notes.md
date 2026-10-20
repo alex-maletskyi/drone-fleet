@@ -21,6 +21,13 @@
 ## 15.10 
 - added the sidebar and displaying data on it
 
+## 16-18.10
+- data about drones shows up on the sidebar
+- added filter bar which sifts through the drone data by class of drones
+
+## 20.10 
+- added the top bar summary with how many drones are doing what
+
 plan for next weeks:
 - [x] Render Leaflet map (#1, already exists)
 - [x] Page layout shell: top bar, map area, sidebar, with placeholder text in each region
